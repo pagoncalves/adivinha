@@ -36,24 +36,6 @@ class App extends React.Component {
 
   render()
 
-    //for (var i = 3;i >= 0;i--) { }
-  /*
-
-
-    if(adv == num) {
-  this.setState((state) => ({
-    result: `Isso aí!! Você adivinhou o número era ${this.state.num}`
-  }))
-  }else if (adv > num) {
-  this.setState((state) => ({
-    result: `O número ${this.state.adv} que você chutou é um número maior do que eu havia escolhido, tente novamente`
-  }))
-  } else {
-  this.setState((state) => ({
-    result: `O número ${this.state.adv} que você chutou é um número menor do que eu havia escolhido, tente novamente`
-  }))
-
-  }*/
   {
   
   return (
