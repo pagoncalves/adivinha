@@ -61,11 +61,11 @@ class App extends React.Component {
       <p>Chute um número entre 0 e 10</p>
       <p>Você tem {this.state.cont} tentativas!</p>
       <input name="adv" value={this.state.adv} onChange={this.handleInput} />
-      <button onClick={this.handlebtn}>Adivinhei?</button>
+      {this.state.cont !== 0 && <button onClick={this.handlebtn}>Adivinhei?</button>}
       <p>O numéro que você chutou é {this.state.ult} </p>
       {this.state.ult > this.state.num && <p>Muito alto!</p>}
       {this.state.ult < this.state.num && <p>Muito baixo!</p>}
-      {this.state.cont === 0 && <p>Acabaram as chances!</p>}
+      {this.state.cont === 0 && this.state.ult !== this.state.num && <p>Acabaram as chances! O número era {this.state.num}</p>}
       {this.state.ult === this.state.num && <p>Acertou!</p>}
       
      <button onClick={this.handlenovo}>Novo Jogo</button>
